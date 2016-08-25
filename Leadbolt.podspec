@@ -9,7 +9,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/VoodooGames/leadbolt.git", :tag => s.version.to_s }
 
   s.vendored_frameworks = "AppTracker.framework"
-  
+  s.vendored_library = "libMopubAppTracker.a"
+
   s.frameworks = "AdSupport", "CoreTelephony", "StoreKit", "AVFoundation", "CoreMedia", "SystemConfiguration"
 
 end
